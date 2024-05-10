@@ -11,7 +11,7 @@ class RabbitmqPublisher:
         self.__password = "guest"
         self.__channel = self.create_channel()
         self.__exchange = "data_exchange"
-        self.__routing_key = ""
+        self.__routing_key = "RK"
 
     def create_channel(self):
         connection_parameters = pika.ConnectionParameters(
